@@ -208,7 +208,7 @@ export class ImageCropperComponent implements OnChanges, OnInit {
     }
 
     private isValidImageType(type: string): boolean {
-        return /image\/(png|jpg|jpeg|bmp|gif|tiff|webp)/.test(type);
+        return /image\/(png|jpg|jpeg|bmp|gif|tiff|webp|svg\+xml)/.test(type);
     }
 
     private checkExifAndLoadBase64Image(imageBase64: string): void {
