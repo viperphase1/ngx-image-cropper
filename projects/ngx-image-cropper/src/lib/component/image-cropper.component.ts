@@ -208,6 +208,7 @@ export class ImageCropperComponent implements OnChanges, OnInit {
     }
 
     private isValidImageType(type: string): boolean {
+        console.log('WAH');
         return /image\/(png|jpg|jpeg|bmp|gif|tiff|webp|svg\+xml)/.test(type);
     }
 
